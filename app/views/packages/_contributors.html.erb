@@ -1,0 +1,5 @@
+<ul>
+  <% contributors.each do |contributor| %>
+    <li><%= contributor.name %> <%= contributor.email if contributor.email%></li>
+  <% end %>
+</ul>

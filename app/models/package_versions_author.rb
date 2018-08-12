@@ -1,0 +1,2 @@
+class PackageVersionsAuthor < PackageVersionsContributor
+end

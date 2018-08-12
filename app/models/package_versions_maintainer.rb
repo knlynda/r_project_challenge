@@ -1,0 +1,2 @@
+class PackageVersionsMaintainer < PackageVersionsContributor
+end

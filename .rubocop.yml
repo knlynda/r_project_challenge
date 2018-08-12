@@ -1,0 +1,38 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  ExtraDetails: true
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  Exclude:
+    - db/**/*
+    - vendor/**/*
+    - bin/*
+    - log/**/*
+    - public/**/*
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - spec/**/*.rb
+
+Metrics/BlockLength:
+  Exclude:
+    - config/environments/development.rb
+    - config/environments/production.rb
+    - config/routes.rb
+    - config/initializers/simple_form.rb
+    - spec/**/*.rb
+
+Metrics/LineLength:
+  Max: 120
+
+Rails:
+  Enabled: true
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FormatStringToken:
+  Enabled: false
